@@ -20,22 +20,17 @@ def manipulate_zero_index(num_group):
     num_group.insert(working_num_list, 8) # needs a way to find the missing number in the list
     num_group.remove(0)  # removing the zero in the list
     print(num_group)
-
+    
 
 def finding_missing_number():
     pass
-
+    
 
 def the_sudoku_format(x):
     for nums in rows:
         print(nums)
+        
 
 print(r1)
-
-
-
-# x = (r1.index(0))
-# y = r1.insert(x, 8)
-# z = r1.remove(0)
 
 manipulate_zero_index(r1)
