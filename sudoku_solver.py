@@ -3,7 +3,7 @@
 # from the top to the bottom.
 # change values here.
 
-r1 = [9, 2, 3, 4, 5, 6, 7, 0, 1]
+r1 = [9, 2, 3, 4, 5, 6, 8, 0, 1]
 r2 = [0, 0, 1, 0, 0, 0, 0, 0, 0]
 r3 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 r4 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -22,15 +22,12 @@ def manipulate_zero_index(num_group):
     print(num_group)
     
 
-def finding_missing_number():
-    pass
+def finding_missing_number(nums):
+    n = len(nums) + 1
+    total = sum([num for num in range(0, n)])
+    return total - sum(nums)
     
 
 def the_sudoku_format(x):
     for nums in rows:
         print(nums)
-        
-
-print(r1)
-
-manipulate_zero_index(r1)
