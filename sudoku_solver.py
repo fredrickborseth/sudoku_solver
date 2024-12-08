@@ -16,9 +16,10 @@ r9 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 rows = [r1, r2, r3, r4, r5, r6, r7, r8, r9]
 
 def manipulate_zero_index(num_group):
+    n = finding_missing_number(num_group)
     working_num_list = num_group.index(0)
-    num_group.insert(working_num_list, 8) # needs a way to find the missing number in the list
-    num_group.remove(0)  # removing the zero in the list
+    num_group.insert(working_num_list, n)
+    num_group.remove(0)
     print(num_group)
     
 
@@ -31,3 +32,6 @@ def finding_missing_number(nums):
 def the_sudoku_format(x):
     for nums in rows:
         print(nums)
+
+
+manipulate_zero_index(r1)
