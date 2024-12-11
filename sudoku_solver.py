@@ -35,5 +35,14 @@ def manipulate_zero_index(num_group):
     num_group.remove(0)  # removing the zero in the list
     return num_group
 
+# pattern that checks if a number can be insterted into the cell
+# its cross checking if the number already exists in a number group (rows, columns, 3 x 3)
+def cross_check_numbers():
+    pass
+# if the missing number exists -> check the next number
+def next_number_in_list():
+    pass
+
+# if there is only one number left - > insert the number into the cell
 
 manipulate_zero_index(r1)
